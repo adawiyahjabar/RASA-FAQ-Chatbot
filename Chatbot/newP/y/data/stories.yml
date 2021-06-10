@@ -1,0 +1,450 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: lost theft damage of company property 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_1
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: lost theft damage of company property 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_1
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: lost theft damage of company property 2 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_2
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_2
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: lost theft damage of company property 2 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_2
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_2
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: lost theft damage of company property 3 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_3
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_3
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: lost theft damage of company property 3 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_3
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_3
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: lost theft damage of company property 4 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_4
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_4
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: lost theft damage of company property 4 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Lost_Theft_DamageOfCompanyProperty_4
+    - action: utter_Lost_Theft_DamageOfCompanyProperty_4
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: request and approval for new software or application 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Request_and_Approval_for_New_Software_or_App_1
+    - action: utter_Request_and_Approval_for_New_Software_or_App_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: request and approval for new software or application 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Request_and_Approval_for_New_Software_or_App_1
+    - action: utter_Request_and_Approval_for_New_Software_or_App_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: multimedia design request 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Multimedia_Design_Request_1
+    - action: utter_Multimedia_Design_Request_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: multimedia design request 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Multimedia_Design_Request_1
+    - action: utter_Multimedia_Design_Request_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: multimedia design request 2 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Multimedia_Design_Request_2
+    - action: utter_Multimedia_Design_Request_2
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: multimedia design request 2 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Multimedia_Design_Request_2
+    - action: utter_Multimedia_Design_Request_2
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: ict technical support request 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_1
+    - action: utter_ICT_Technical_Support_Request_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: ict technical support request 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_1
+    - action: utter_ICT_Technical_Support_Request_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: ict technical support request 2 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_2
+    - action: utter_ICT_Technical_Support_Request_2
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: ict technical support request 2 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_2
+    - action: utter_ICT_Technical_Support_Request_2
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: ict technical support request 3 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_3
+    - action: utter_ICT_Technical_Support_Request_3
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: ict technical support request 3 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ICT_Technical_Support_Request_3
+    - action: utter_ICT_Technical_Support_Request_3
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_1
+    - action: utter_Purchase_Requisition_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_1
+    - action: utter_Purchase_Requisition_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 2 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_2
+    - action: utter_Purchase_Requisition_2
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 2 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_2
+    - action: utter_Purchase_Requisition_2
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 3 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_3
+    - action: utter_Purchase_Requisition_3
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 3 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_3
+    - action: utter_Purchase_Requisition_3
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 4 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_4
+    - action: utter_Purchase_Requisition_4
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 4 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_4
+    - action: utter_Purchase_Requisition_4
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 5 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_5
+    - action: utter_Purchase_Requisition_5
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 5 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_5
+    - action: utter_Purchase_Requisition_5
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 6 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_6
+    - action: utter_Purchase_Requisition_6
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 6 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_6
+    - action: utter_Purchase_Requisition_6
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: purchase requisition 7 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_7
+    - action: utter_Purchase_Requisition_7
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: purchase requisition 7 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Purchase_Requisition_7
+    - action: utter_Purchase_Requisition_7
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: attendance policy 1 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_1
+    - action: utter_Attendance_Policy_1
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: attendance policy 1 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_1
+    - action: utter_Attendance_Policy_1
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: attendance policy 2 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_2
+    - action: utter_Attendance_Policy_2
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: attendance policy 2 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_2
+    - action: utter_Attendance_Policy_2
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: attendance policy 3 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_3
+    - action: utter_Attendance_Policy_3
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: attendance policy 3 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_3
+    - action: utter_Attendance_Policy_3
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance
+
+- story: attendance policy 4 path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_4
+    - action: utter_Attendance_Policy_4
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: attendance policy 4 path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Attendance_Policy_4
+    - action: utter_Attendance_Policy_4
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_further_assistance

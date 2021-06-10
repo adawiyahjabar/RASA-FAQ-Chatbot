@@ -1,0 +1,180 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Lost_Theft_DamageOfCompanyProperty_1
+  examples : |
+    - If the company’s asset is lost or stolen, will the employee be required to bear the cost?
+
+- intent: Lost_Theft_DamageOfCompanyProperty_2
+  examples : |
+    - Will there be a replacement provided to the employee if the company's asset is lost or stolen?
+
+- intent: Lost_Theft_DamageOfCompanyProperty_3
+  examples : |
+    - Will the employee be obliged to pay if the company’s asset were damaged?
+
+- intent: Lost_Theft_DamageOfCompanyProperty_4
+  examples : |
+    - Will there be a temporary replacement provided if the damaged company’s asset is being sent for repair?
+
+- intent: Request_and_Approval_for_New_Software_or_App_1
+  examples : |
+    - Can employees download and use an app themselves if it is free and does not require any registration or payment?
+
+- intent: Multimedia_Design_Request_1
+  examples : |
+    - What is the time period for the design team to complete a design request?
+
+- intent: Multimedia_Design_Request_2
+  examples : |
+    - How does the Design Team address the level of urgency of a particular request?
+
+- intent: ICT_Technical_Support_Request_1
+  examples : |
+    - Who is responsible to fix if there is any software malfunction or technical error?
+
+- intent: ICT_Technical_Support_Request_2
+  examples : |
+    - If it is just a small request do I still need to go through teamwork and request via form or can I straight contact ICT support for assistance?
+
+- intent: ICT_Technical_Support_Request_3
+  examples : |
+    -If the company’s assets have surpassed the warranty period, will the employee be subjected to pay for the troubleshooting issue?
+
+- intent: Purchase_Requisition_1
+  examples : |
+    -Is it possible to skip the purchase requisition flow for urgent/ last minute purchase?
+
+- intent: Purchase_Requisition_2
+  examples : |
+    -What is the pre-approved amount that a VP of each department can approve on for urgent/ last minute purchase?
+
+- intent: Purchase_Requisition_3
+  examples : |
+    -Due to the urgent need of the product, do we need to inform the procurement team if we direct purchase from a local store?
+
+- intent: Purchase_Requisition_4
+  examples : |
+    -What is the definition of goods and services?
+
+- intent: Purchase_Requisition_5
+  examples : |
+    -In what circumstances is the vendor requisition form needed?
+
+- intent: Purchase_Requisition_6
+  examples : |
+    -Is there a limit to the amount of items allowed for purchase requests?
+
+- intent: Purchase_Requisition_7
+  examples : |
+    -Can the requester suggest where to purchase the requested item?
+
+- intent: Attendance_Policy_1
+  examples : |
+    -What is the latest date to submit MC or any other supporting document to HR?
+
+- intent: Attendance_Policy_2
+  examples : |
+    -Out of Office/ Time Off (work-related) Application
+    -Is it compulsory to submit an OOO application through the company's HR app (BambooHR) even though the employee will just be OOO for less than 4 hours? Or, is it possible to only inform on Slack #timeoff?
+
+- intent: Attendance_Policy_3
+  examples : |
+    -Emergency/ Sick Leave Application
+    -Upon return to work, where can employees submit the medical certificate, and any other related supporting documents?
+
+- intent: Attendance_Policy_4
+  examples : |
+    -Occurrence
+    -What is the difference between tardiness versus missed clocks?
+

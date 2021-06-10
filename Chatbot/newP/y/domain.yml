@@ -1,0 +1,125 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Lost_Theft_DamageOfCompanyProperty_1
+  - Lost_Theft_DamageOfCompanyProperty_2
+  - Lost_Theft_DamageOfCompanyProperty_3
+  - Lost_Theft_DamageOfCompanyProperty_4
+  - Request_and_Approval_for_New_Software_or_App_1
+  - Multimedia_Design_Request_1
+  - Multimedia_Design_Request_2
+  - ICT_Technical_Support_Request_1
+  - ICT_Technical_Support_Request_2
+  - ICT_Technical_Support_Request_3
+  - Purchase_Requisition_1
+  - Purchase_Requisition_2
+  - Purchase_Requisition_3
+  - Purchase_Requisition_4
+  - Purchase_Requisition_5
+  - Purchase_Requisition_6
+  - Purchase_Requisition_7
+  - Attendance_Policy_1
+  - Attendance_Policy_2
+  - Attendance_Policy_3
+  - Attendance_Policy_4
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_further_assistance:
+  - text: "If you need further assistance, kindly email us at hr@skymind.global"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_Lost_Theft_DamageOfCompanyProperty_1:
+  - text: "Yes, ICT & Finance Department will calculate the cost of the asset after depreciation and HR will proceed to work on the repayment agreement with the employee."
+
+  utter_Lost_Theft_DamageOfCompanyProperty_2:
+  - text: "Yes, a replacement will be provided as work must still go on."
+
+  utter_Lost_Theft_DamageOfCompanyProperty_3:
+  - text: "Yes, the employee will be subjected to pay for the repair or replacement of the company’s asset if the damages were caused due to negligence."
+
+  utter_Lost_Theft_DamageOfCompanyProperty_4:
+  - text: "Yes, there will be a replacement provided while the company’s asset is being sent for repair."
+
+  utter_Request_and_Approval_for_New_Software_or_App_1:
+  - text: "No, all work related apps used must be registered with ICT Support even if it is a free app."
+
+  utter_Multimedia_Design_Request_1:
+  - text : "Depending on the complexity of the design request, the design team will need at least 3 - 5 working days or more."
+
+  utter_Multimedia_Design_Request_2:
+  - text : "Requesters will need to update the level of urgency in the form. When there are multiple urgent requests received at the same time, the design team will get advice from HOD on which to prioritize."
+
+  utter_ICT_Technical_Support_Request_1:
+  - text : "Those holding the company's asset can refer back to ICT Support by filling up the request form if they are faced with any technical problem."
+
+  utter_ICT_Technical_Support_Request_2:
+  - text: "All requests need to follow procedure. Employees must still submit the request form via teamwork regardless of the importance of the task requested."
+
+  utter_ICT_Technical_Support_Request_3:
+  - text: "The employee will only be subjected to pay for damages caused by negligence. Any other issue will be paid by the company."
+
+  utter_Purchase_Requisition_1:
+  - text : "Any urgent / last minute purchase for an event or project use is possible with an approval by the HOD for purchase of items within the pre-approved amount."
+
+  utter_Purchase_Requisition_2:
+  - text: "HOD is able to approve any urgent / last minute purchase for items not exceeding RM100."
+
+  utter_Purchase_Requisition_3:
+  - text: "Yes, upon obtaining approval from DOH only can the purchase be claimable. It is also advisable to copy the procurement team in this process."
+
+  utter_Purchase_Requisition_4:
+  - text: "Example of services:-
+           -	Hiring freelance content writer
+           -	Engaging caterer for event
+           -	Banner printing "
+
+  utter_Purchase_Requisition_5:
+  - text: "All vendors must be registered as this is compulsory for audit purposes."
+
+  utter_Purchase_Requisition_6:
+  - text: "A maximum of 3 items allowed per form. If the requester would like to request a purchase for more than 3 items then he/she would need to split the items into another purchase requisition form."
+
+  utter_Purchase_Requisition_7:
+  - text: "Requester can provide the procurement team with 3 vendor options and state their preference. This will help cut unnecessary time spent for sourcing and also ensure accuracy of item sourced."
+
+  utter_Attendance_Policy_1:
+  - text : "Employees must submit the MC or other supporting document to HR the next day upon returning to work. Otherwise, it is compulsory to email softcopy to HR first and submit hardcopy later."
+
+  utter_Attendance_Policy_2:
+  - text: "Employees would still need to apply for OOO on BambooHR & notify via Slack #timeoff as long as the employee is OOO for any work related task."
+
+  utter_Attendance_Policy_3:
+  - text: "All documents must be submitted to HR upon returning to work."
+
+  utter_Attendance_Policy_4:
+  - text: "Tardiness means turning up for work late or leaving work early.
+           Missed clocks means forgetting to thumb in/ out for work."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
